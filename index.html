@@ -32,6 +32,46 @@
     background: #Bac2ab;
     ;
   }
+  .myNavBar {
+    background: #Bac2ab;
+  }
+  /* Style the button that is used to open and close the collapsible content */
+  .collapsible {
+        background-color: #Bac2ab;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+      }
+
+      /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+      .active,
+      .collapsible:hover {
+        background-color: #Bac2ab;
+      }
+
+      /* Style the collapsible content (google form). Note: hidden by default */
+      .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #Bac2ab;
+        width: 100%;
+      }
+
+      /* Style the collapsible spreadsheet content. 
+      Same as above but wider. */
+      .contentsheet {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #Bac2ab;
+        width: 100%;
+      }
 
   /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
   #main {
@@ -131,7 +171,7 @@
         <p>
         <div><iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLScFWfftWOqmqO_8LGGO5eViSlyTQ6FZcpT_5hUtAI2jL21KeQ/viewform?embedded=true"
-            width="640" height="3009" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+            height="1000" width = "100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
         </p>
       </div>
 
@@ -159,7 +199,7 @@
       <div class="contentsheet">
         <div><iframe
             src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKkXp4fvslcEp4Kg1TckagPPhnlGGTM8yMiW9RtasOFcqRYdJEjNZxQbyXCUjjuguXp4DXMM23HYjK/pubhtml?gid=1366586028&amp;single=true&amp;widget=true&amp;headers=false"
-            width="1000" height="500"></iframe></div>
+            height="500" width = "100%" frameborder="0" marginheight="0" marginwidth="0"></iframe></div>
       </div>
       <!-- End Portfolio Section -->
     </div>
@@ -178,7 +218,7 @@
 
 
     <!-- END PAGE CONTENT -->
-    <style>
+   <!-- <style>
       /* Style the button that is used to open and close the collapsible content */
       .collapsible {
         background-color: #eee;
@@ -216,7 +256,7 @@
         background-color: #f1f1f1;
         width: 960px;
       }
-    </style>
+    </style> -->
     <script>var coll = document.getElementsByClassName("collapsible");
       var i;
 
