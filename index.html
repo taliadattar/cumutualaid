@@ -7,157 +7,229 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222222;;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+  body {
+    font-family: "Montserrat", sans-serif
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: black;
+    font-family: "Montserrat", sans-serif
+  }
+
+  .w3-row-padding img {
+    margin-bottom: 12px;
+    background: #f8dddd;
+  }
+
+  /* Set the width of the sidebar to 120px */
+  .w3-sidebar {
+    width: 120px;
+    background: #Bac2ab;
+    ;
+  }
+
+  /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+  #main {
+    margin-left: 120px;
+    background: #f8dddd;
+  }
+
+  /* Remove margins from "page content" on small screens */
+  @media only screen and (max-width: 600px) {
+    #main {
+      margin-left: 0
+    }
+  }
 </style>
+
 <head>
   <link rel="icon" type="png" href="favicon.ico">
 </head>
-<body class="w3-black">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="favicon.ico" style="width:50%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <!-- <i class="fa fa-home w3-xxlarge"></i> -->
-    <p>HOME</p>
-  </a>
-  <a href="#join" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <!-- <i class="fa fa-user w3-xxlarge"></i> -->
-    <p>RECEIVE</p>
-  </a>
-  <a href="#give" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <!-- <i class="fa fa-eye w3-xxlarge"></i> -->
-    <p>GIVE</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <!-- <i class="fa fa-envelope w3-xxlarge"></i> -->
-    <p>CONTACT</p>
-  </a>
-</nav>
+<body>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#join" class="w3-bar-item w3-button" style="width:25% !important">RECEIVE</a>
-    <a href="#give" class="w3-bar-item w3-button" style="width:25% !important">GIVE</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-  </div>
-</div>
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <!-- Avatar image in top left corner -->
+    <img src="favicon.ico" style="width:50%">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-#4d6753">
+      <!-- <i class="fa fa-home w3-xxlarge"></i> -->
+      <p>HOME</p>
+    </a>
+    <a href="#join" class="w3-bar-item w3-button w3-padding-large w3-hover-#4d6753">
+      <!-- <i class="fa fa-user w3-xxlarge"></i> -->
+      <p>RECEIVE</p>
+    </a>
+    <a href="#give" class="w3-bar-item w3-button w3-padding-large w3-hover-#4d6753">
+      <!-- <i class="fa fa-eye w3-xxlarge"></i> -->
+      <p>GIVE</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-#4d6753">
+      <!-- <i class="fa fa-envelope w3-xxlarge"></i> -->
+      <p>CONTACT</p>
+    </a>
+  </nav>
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo">Cornell and Ithaca Community</h1>
-    <h2>Mutual Aid</h2>
-    <img src="favicon.ico" alt="hands" class="w3-image" width="70" height="70">
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64">
-    <h2 class="w3-text-light-grey">Who We Are</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>The purpose of this spreadsheet is to make mutual aid in our community easier so that funds get to those that need it. This is made primarily with Cornell students in mind, but we welcome members of the larger Ithaca community to participate and use this form as you need. See the contact section and reach out to Cornell Abolitionist Revolutionary Society (CARS) if you have questions.
-    </p>
-    <p>This tool was heavily inspired by Students Organizing Mutual Aid and Defense's (SOMAD) reparations spreadsheet. If y'all are reading this thank you! You can check them out <a href= https://www.facebook.com/groups/135485187889200>here</a></p>
-  </div>
-  </header>
-
-  <!-- Join Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="join">
-    <h2 class="w3-text-light-grey">Need Funds?</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <h3 class="w3-text-light-grey">Fill out the form below!</h3>
-    <p>How does the form work? We do our best to anonymize the responses (Jane Doe will appear as JaDo) and give you the option to put down a friends cash link if you're not comfortable putting your own. Your name and cash information will appear on the next sheet over.
-    </p>
-    <p>The form is not an application, anyone who signs up will be put on our spreadsheet. <b>However, BIPOC, low-income, and trans and GNC students will be placed higher on the sheet for priority.</b> If you do not belong to any of those groups, we ask that you not misuse the system and only sign up if you truly are in need. </p>
-    <button type="button" class="collapsible">Complete Form</button>
-    <div class="content">
-      <p><div><iframe src="https://docs.google.com/forms/d/e/1FAIpQLScFWfftWOqmqO_8LGGO5eViSlyTQ6FZcpT_5hUtAI2jL21KeQ/viewform?embedded=true" width="640" height="3009" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div></p>
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <a href="#join" class="w3-bar-item w3-button" style="width:25% !important">RECEIVE</a>
+      <a href="#give" class="w3-bar-item w3-button" style="width:25% !important">GIVE</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
     </div>
-   
-  <!-- End Join Section -->
-  </div>
-  
-  <!-- Give Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="give">
-    <h2 class="w3-text-light-grey">Redistribute Your Money</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <h3 class="w3-text-light-grey">Click 'View List' to Take a Look at the Sheet Below</h3>
-    <p>Have access to wealth or some extra money in your account? Take a look at the next sheet (take a look at the bottom tabs) and you'll see a list of cashlinks of community members in need of some funds. Take into consideration that the order is not necessarily chronological but as explained above.</p>
-    <p>According to Resource Generation, <b>people in the top 10% should start the journey of redistributing stolen wealth by redistributing 10% of their wealth monthly,</b> with the goal of redistributing all or almost all inherited wealth over time.</p>
-    <p>If you want to pick completely randomly, here's a <!-- Calculator Copyright Calculate Stuff - calculatestuff.com --><a href="https://www.calculatestuff.com/miscellaneous/random-number-generator" onclick="window.open('https://www.calculatestuff.com/miscellaneous/random-number-generator?display_type=popup','Random Number Generator','width=700,height=700,resizable=1,scrollbars=1,toolbar=0,menubar=0');return false;">random number generator.</a>
-    </p>
-    <button type="button" class="collapsible">View List</button>
-    <div class="content">
-    <div><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKkXp4fvslcEp4Kg1TckagPPhnlGGTM8yMiW9RtasOFcqRYdJEjNZxQbyXCUjjuguXp4DXMM23HYjK/pubhtml?gid=1366586028&amp;single=true&amp;widget=true&amp;headers=false" width="1000" height="500"></iframe></div>
-  </div>
-  <!-- End Portfolio Section -->
   </div>
 
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact CARS</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <div class="w3-section">
-      <p>Email: cornellabolitionists@mail.com</p>
-      <p>Instagram: @cornellars</p>
-    </div><br>
-  <!-- End Contact Section -->
-  </div>
-  
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center w3-#fbdddd" id="home">
+      <h1 class="w3-xlarge">Cornell and Ithaca Community</h1>
+      <h2>Mutual Aid</h2>
+      <img src="favicon.ico" alt="hands" class="w3-image" width="70" height="70">
+      <div class="w3-content w3-justify w3-text-black w3-padding-64">
+        <h2 class="w3-text-black">Who We Are</h2>
+        <hr style="width:200px" class="w3-opacity">
+        <p>The purpose of this spreadsheet is to make mutual aid in our community easier so that funds get to those that
+          need it. If you haven't noticed, wealth inequality is pretty egregious at this school. Something like 50% of
+          students don't get financial aid. This is your opportunity to redistribute your wealth!
+        </p>
+        <p>Though this tool is made primarily
+          with Cornell students in mind, we welcome members of the larger Ithaca
+          community to participate and use this form as you need. See the contact section and reach out to Cornell
+          Abolitionist Revolutionary Society (CARS) if you have questions.
+        </p>
+        <p>This tool was heavily inspired by Students Organizing Mutual Aid and Defense's (SOMAD) <a
+            href=https://docs.google.com/spreadsheets/d/11HZnIbH-8TR_MwpNvtljpBvX5bbp5MWrSvPuS1YuEgY/edit?usp=sharing>reparations
+            spreadsheet</a>. If y'all are reading this thank you! You can check them out <a
+            href=https://www.facebook.com/groups/135485187889200>here</a>.</p>
+      </div>
+    </header>
+
+    <!-- Join Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="join">
+      <h2 class="w3-text-black">Need Funds?</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <h3>Fill out the form below!</h3>
+      <p>How does the form work? We do our best to anonymize the responses (Jane Doe will appear as JaDo) and give you
+        the option to put down a friends cash link if you're not comfortable putting your own. Your name and cash
+        information will appear on the next sheet over.
+      </p>
+      <p>The form is not an application, anyone who signs up will be put on our spreadsheet. <b>However, BIPOC,
+          low-income, and trans and GNC students will be placed higher on the sheet for priority.</b> If you do not
+        belong to any of those groups, we ask that you not misuse the system and only sign up if you truly are in need.
+      </p>
+      <button type="button" class="collapsible">Complete Form</button>
+      <div class="content">
+        <p>
+        <div><iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLScFWfftWOqmqO_8LGGO5eViSlyTQ6FZcpT_5hUtAI2jL21KeQ/viewform?embedded=true"
+            width="640" height="3009" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+        </p>
+      </div>
+
+      <!-- End Join Section -->
+    </div>
+
+    <!-- Give Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="give">
+      <h2 class="w3-text-black">Redistribute Your Money</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <h3 class="w3-text-black">Click 'View List' Below</h3>
+      <p>Have access to wealth or some extra money in your account? Take a look at the next sheet (take a look at the
+        bottom tabs) and you'll see a list of cashlinks of community members in need of some funds. Take into
+        consideration that the order is not necessarily chronological but as explained above.</p>
+      <p>According to Resource Generation, <b>people in the top 10% should start the journey of redistributing stolen
+          wealth by redistributing 10% of their wealth monthly,</b> with the goal of redistributing all or almost all
+        inherited wealth over time.</p>
+      <p>If you want to pick completely randomly, here's a
+        <!-- Calculator Copyright Calculate Stuff - calculatestuff.com --><a
+          href="https://www.calculatestuff.com/miscellaneous/random-number-generator"
+          onclick="window.open('https://www.calculatestuff.com/miscellaneous/random-number-generator?display_type=popup','Random Number Generator','width=700,height=700,resizable=1,scrollbars=1,toolbar=0,menubar=0');return false;">random
+          number generator.</a>
+      </p>
+      <button type="button" class="collapsible">View List</button>
+      <div class="contentsheet">
+        <div><iframe
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKkXp4fvslcEp4Kg1TckagPPhnlGGTM8yMiW9RtasOFcqRYdJEjNZxQbyXCUjjuguXp4DXMM23HYjK/pubhtml?gid=1366586028&amp;single=true&amp;widget=true&amp;headers=false"
+            width="1000" height="500"></iframe></div>
+      </div>
+      <!-- End Portfolio Section -->
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+      <h2 class="w3-text-black">Contact CARS</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <div class="w3-section">
+        <p>Email: cornellabolitionists@mail.com</p>
+        <p>Instagram: @cornellars</p>
+      </div><br>
+      <!-- End Contact Section -->
+    </div>
 
 
-<!-- END PAGE CONTENT -->
-<style>
-  /* Style the button that is used to open and close the collapsible content */
-.collapsible {
-background-color: #eee;
-color: #444;
-cursor: pointer;
-padding: 18px;
-width: 640px;
-border: none;
-text-align: left;
-outline: none;
-font-size: 15px;
-}
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-background-color: #ccc;
-}
-
-/* Style the collapsible content. Note: hidden by default */
-.content {
-padding: 0 18px;
-display: none;
-overflow: hidden;
-background-color: #f1f1f1;
-width: 640px;
-}
-</style>
-<script>var coll = document.getElementsByClassName("collapsible");
-  var i;
-  
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.display === "block") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "block";
+    <!-- END PAGE CONTENT -->
+    <style>
+      /* Style the button that is used to open and close the collapsible content */
+      .collapsible {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 640px;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
       }
-    });
-  }</script>
-</div>
+
+      /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+      .active,
+      .collapsible:hover {
+        background-color: #ccc;
+      }
+
+      /* Style the collapsible content (google form). Note: hidden by default */
+      .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+        width: 640px;
+      }
+
+      /* Style the collapsible spreadsheet content. 
+      Same as above but wider. */
+      .contentsheet {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+        width: auto;
+      }
+    </style>
+    <script>var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }</script>
+  </div>
 
 
 </body>
